@@ -1,0 +1,249 @@
+:root {
+    --amarelo: #F2B90C;
+    --azul: #0A3871;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --vermelho: #EC1313;
+    --roxo: #5B13EC;
+    --fonte: 'Orbitron', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--amarelo);
+    font-size: 18px;
+}
+
+header {
+    height: 10vh;
+}
+
+.logo {
+    margin: 10px 0 0 20px;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    height: 80vh;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal {
+    width: 50vw;
+    height: 80%;
+}
+
+.texto-principal {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: var(--amarelo);
+    padding: 1em;
+}
+
+.aviso-principal {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.aviso-principal:before {
+    content: "❗";
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 1.4em;
+    width: 60%;
+    color: var(--branco);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px var(--preto);
+    margin: 12px;
+    padding: 30px;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}
+
+.btn-criptografar {
+    background-color: var(--azul);
+}
+
+.btn-descriptografar {
+    background-color: var(--vermelho);
+}
+
+.mensagem {
+    width: 25vw;
+    height: 100%;
+    text-align: center;
+    padding: 2em;
+    border-radius: 35px;
+    box-shadow: 10px 10px 100px var(--preto);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10vh;
+}
+
+.imagem-mensagem {
+    width: 90%;
+    height: 60%;
+    margin-bottom: 10%;
+}
+
+.titulo-mensagem {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.texto-mensagem {
+    font-size: 1.3em;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--azul);
+}
+
+.texto-footer {
+    color:var(--branco);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0 ;
+}
+
+.link-footer {
+    box-sizing: border-box;
+    color: var(--branco);
+    text-decoration: none;
+    font-style: italic;
+    text-shadow: 3px 3px 5px var(--vermelho);
+}
+
+.link-footer:hover {
+    color: var(--amarelo);
+    text-shadow: 1px 1px 10px var(--branco);
+}
+
+
+/* Tablet */
+@media only screen and (max-width : 870px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .principal {
+        width: 100%;
+        height: 60%;
+    }
+
+    .texto-principal {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        width: 90%;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    .mensagem {
+        width: 90%;
+        height: 30%;
+        margin-top: 0;
+    }
+
+    .imagem-mensagem {
+        display: none;
+    }
+
+    .titulo-mensagem {
+        font-size: 1.1em;
+    }
+
+    .texto-mensagem {
+        font-size: 1em;
+    }
+}
+
+/* Smart Phone */
+@media only screen and (max-width : 495px) {
+    .btn {
+        font-size: 1em;
+    }
+
+    .texto-footer {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 390px) {
+    .aviso-principal {
+       font-size: 0.8em;
+    }
+    
+    .botoes {
+        flex-direction: column;
+
+    }
+
+    .btn {
+        padding:5px;
+        margin: 10px;
+    }
+
+    .mensagem {
+        height: 25%;
+        padding: 0.5em;
+    }
+
+    .titulo-mensagem {
+        font-size: 16px;
+    }
+    
+    .texto-mensagem {
+        font-size: 14px;
+    }
+
+    .texto-footer {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+
+
+
