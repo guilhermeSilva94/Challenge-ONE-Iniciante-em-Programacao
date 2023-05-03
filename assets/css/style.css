@@ -73,6 +73,12 @@ main {
     content: "❗";
 }
 
+.aviso-destaque {
+    font-weight: bold;
+    color: purple;
+    font-size: 1.1em;
+}
+
 .botoes {
     display: flex;
     justify-content: space-around;

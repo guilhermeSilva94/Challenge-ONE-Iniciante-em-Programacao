@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
         <title>Decodificador de Texto</title>
     </head>
     
@@ -19,11 +18,11 @@
         <main>
             <div class="container">
                 <section class="principal">
-                    <textarea class="texto-principal" placeholder="Digite seu texto"></textarea>
-                    <p class="aviso-principal">Apenas letras minúsculas e sem acento.</p>
+                    <textarea id="texto-principal" class="texto-principal" placeholder="Digite seu texto"></textarea>
+                    <p id="aviso" class="aviso-principal">Apenas letras minúsculas e sem acento.</p>
                     <div class="botoes">
-                        <button class="btn btn-criptografar">Criptografar</button>
-                        <button class="btn btn-descriptografar">Descriptografar</button>
+                        <button id="criptografar" class="btn btn-criptografar">Criptografar</button>
+                        <button id="descriptografar" class="btn btn-descriptografar">Descriptografar</button>
                     </div>
                 </section>
                 <section class="mensagem">
