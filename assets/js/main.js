@@ -1,4 +1,4 @@
-function validacaoTexto() {
+function validarTexto() {
     const expressaoRegular = /^[a-z]*$/;
     const validacao = expressaoRegular.test(textoPrincipal.value);
     if (!validacao) {
@@ -6,12 +6,9 @@ function validacaoTexto() {
     } else {
         aviso.classList.remove('aviso-destaque');
     }
-
-    textoPrincipal.addEventListener('input', validacaoTexto);
 }
 
 const textoPrincipal = document.querySelector('#texto-principal');
-const aviso = document.querySelector('#aviso');
+const aviso = document.querySelector('#aviso');    
 
-
-validacaoTexto()
+textoPrincipal.addEventListener('input', validarTexto);
