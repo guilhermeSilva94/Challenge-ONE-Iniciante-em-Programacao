@@ -5,6 +5,7 @@
     --preto: #000000;
     --vermelho: #EC1313;
     --roxo: #5B13EC;
+    --verde: #298d29;
     --fonte: 'Orbitron', sans-serif;
 }
 
@@ -33,7 +34,6 @@ header {
 }
 
 main {
-    flex-grow: 1;
     height: 80vh;
 }
 
@@ -110,32 +110,75 @@ main {
 }
 
 .mensagem {
-    width: 25vw;
+    width: 35vw;
     height: 100%;
     text-align: center;
     padding: 2em;
     border-radius: 35px;
     box-shadow: 10px 10px 100px var(--preto);
-    padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     margin-top: -10vh;
+}
+
+.mensagem-inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .imagem-mensagem {
     width: 90%;
-    height: 60%;
-    margin-bottom: 10%;
+    height: 40%;
+    margin-bottom: 15%;
+    margin-top: -10%;
 }
 
 .titulo-mensagem {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 10%;
 }
 
 .texto-mensagem {
-    font-size: 1.3em;
+    font-size: 1.6em;
+}
+
+.mensagem-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.texto-mensagem-final {
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.btn-copiar {
+    font-weight: bold;
+    font-size: 1.4em;
+    width: 60%;
+    color: var(--branco);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px var(--preto);
+    margin: 12px;
+    padding: 30px;
+    background-color: var(--verde);
+}
+
+.btn-copiar:hover {
+    transform: translateY(-10px);
+}
+
+.ocultar {
+    display: none;
 }
 
 footer {
@@ -166,14 +209,18 @@ footer {
 
 
 /* Tablet */
-@media only screen and (max-width : 870px) {
+@media only screen and (max-width : 875px) {
+    .logo {
+        padding: 10px;
+    }
+
     .container {
         flex-direction: column;
     }
 
     .principal {
         width: 100%;
-        height: 60%;
+        height: 55%;
     }
 
     .texto-principal {
@@ -188,8 +235,8 @@ footer {
 
     .mensagem {
         width: 90%;
-        height: 30%;
-        margin-top: 0;
+        height: 35%;
+        margin: 10px;
     }
 
     .imagem-mensagem {
@@ -197,55 +244,106 @@ footer {
     }
 
     .titulo-mensagem {
-        font-size: 1.1em;
+        font-size: 1.6em;
     }
 
     .texto-mensagem {
-        font-size: 1em;
+        font-size: 1.3em;
+        margin-top: 5px;
+    }
+
+    .texto-mensagem-final {
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    .btn-copiar {
+        font-size: 1.2em;
+        width: 40%;
+        margin: 0;
+        padding: 10px;
     }
 }
 
 /* Smart Phone */
 @media only screen and (max-width : 495px) {
+    .logo {
+        padding: 5px;
+    }
+    
     .btn {
         font-size: 1em;
     }
 
-    .texto-footer {
+    .titulo-mensagem {
+        font-size: 1.3em;
+    }
+
+    .texto-mensagem {
+        font-size: 1em;
+        margin-top: 2px;
+    }
+
+    .texto-mensagem-final {
         font-size: 16px;
+    }
+
+    .btn-copiar {
+        font-size: 1em;
+        width: 30%;
+        padding: 5px;
+    }
+
+    .texto-footer {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width : 390px) {
+    .logo {
+        padding: 2px;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
     .aviso-principal {
        font-size: 0.8em;
     }
     
     .botoes {
         flex-direction: column;
-
+        margin-bottom: 10px;
     }
 
     .btn {
-        padding:5px;
+        padding:2px;
         margin: 10px;
     }
 
     .mensagem {
-        height: 25%;
+        height: 30%;
         padding: 0.5em;
+        margin-top: 10px;
     }
 
     .titulo-mensagem {
-        font-size: 16px;
+        font-size: 1.3em;
     }
     
     .texto-mensagem {
-        font-size: 14px;
+        font-size: 1em;
+    }
+
+    .btn-copiar {
+        font-size: 1em;
+        width: 30%;
+        padding: 2px;
     }
 
     .texto-footer {
-        font-size: 12px;
+        font-size: 16px;
         margin: 5px;
     }
 }
