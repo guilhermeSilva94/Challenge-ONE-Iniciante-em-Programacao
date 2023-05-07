@@ -37,18 +37,25 @@ function descriptografarMensagem(texto) {
 function mostrarMensagemCriptografada() {
     const mensagem = textoPrincipal.value;
     const mensagemCriptografada = criptografarMensagem(mensagem);
-    alert(mensagemCriptografada); 
+    mensagemInicial.classList.add('ocultar');
+    mensagemFinal.classList.remove('ocultar');
+    textoFinal.textContent = mensagemCriptografada;
 }
 
 function mostrarMensagemDescriptografada() {
     const mensagem = textoPrincipal.value;
     const mensagemCriptografada = descriptografarMensagem(mensagem);
-    alert(mensagemCriptografada); 
+    mensagemInicial.classList.add('ocultar');
+    mensagemFinal.classList.remove('ocultar');
+    textoFinal.textContent = mensagemCriptografada;
 }
 
 const textoPrincipal = document.querySelector('#texto-principal');
 const aviso = document.querySelector('#aviso');
 const criptografar = document.querySelector('#criptografar');
 const descriptografar = document.querySelector('#descriptografar');
+const mensagemInicial = document.querySelector('#msg-inicial');
+const mensagemFinal = document.querySelector('#msg-final');
+const textoFinal = document.querySelector('#texto-msg-final');
 
 textoPrincipal.addEventListener('input', validarTexto);
