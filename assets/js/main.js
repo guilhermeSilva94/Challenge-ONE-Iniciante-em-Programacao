@@ -50,6 +50,10 @@ function mostrarMensagemDescriptografada() {
     textoFinal.textContent = mensagemCriptografada;
 }
 
+function copiarTexto() {
+
+}  
+  
 const textoPrincipal = document.querySelector('#texto-principal');
 const aviso = document.querySelector('#aviso');
 const criptografar = document.querySelector('#criptografar');
@@ -57,5 +61,7 @@ const descriptografar = document.querySelector('#descriptografar');
 const mensagemInicial = document.querySelector('#msg-inicial');
 const mensagemFinal = document.querySelector('#msg-final');
 const textoFinal = document.querySelector('#texto-msg-final');
+const botaoCopiar = document.querySelector('#copiar');
 
 textoPrincipal.addEventListener('input', validarTexto);
+botaoCopiar.onclick = copiarTexto;
