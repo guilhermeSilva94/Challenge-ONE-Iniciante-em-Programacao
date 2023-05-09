@@ -51,7 +51,8 @@ function mostrarMensagemDescriptografada() {
 }
 
 function copiarTexto() {
-
+    const mensagemCriptografada = textoFinal.textContent;
+    navigator.clipboard.writeText(mensagemCriptografada);
 }  
   
 const textoPrincipal = document.querySelector('#texto-principal');
