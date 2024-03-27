@@ -21,7 +21,7 @@ A letra "u" é convertida para "ufat."</li>
 
 ## Como Usar
 
-1. Clone este repositório para o seu ambiente de desenvolvimento local usando o seguinte comando: git clone https://github.com/seu-usuario/seu-repositorio.git
+1. Clone este repositório para o seu ambiente de desenvolvimento local usando o seguinte comando: git clone https://github.com/guilhermeSilva94/Challenge-ONE-Iniciante-em-Programacao.git
 
 
 2. Abra o arquivo "index.html" em seu navegador de internet.
